@@ -1,6 +1,6 @@
 ## Arrays
 
-let fruit = ['Apple', 'Mango', 'Banana'];
+let fruit = ['Apple', 'Mango', 'Banana'];\
 let veg = ['Carrot', 'Tomato', 'Pumpkin'];
 
 ### Methods
@@ -10,7 +10,8 @@ let veg = ['Carrot', 'Tomato', 'Pumpkin'];
 Joins several arrays into one
 
 ```
-fruit.concat(veg)     
+fruit.concat(veg)                        
+// ['Apple', 'Mango', 'Banana', 'Carrot', 'Tomato', 'Pumpkin']
 ```
 
 #### copyWithin()
@@ -55,6 +56,13 @@ fruit.concat(veg)
 
 #### push()
 
+Adds one or more items to the end of the array and returns the new length
+
+```
+fruit.push('Peach')                     
+// ['Apple', 'Mango', 'Banana', 'Peach']
+```
+
 #### reduce()
 
 #### reduceRight()
@@ -76,6 +84,13 @@ fruit.concat(veg)
 #### toString()
 
 #### unshift()
+
+Adds one or more items to the start of the array and returns the new length
+
+```
+fruit.unshift('Peach')                   
+// ['Peach', 'Apple', 'Mango', 'Banana']
+```
 
 #### valueOf()
 
