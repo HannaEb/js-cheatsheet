@@ -2,8 +2,8 @@
 
 let fruit = ['Apple', 'Mango', 'Banana'];\
 let veg = ['Carrot', 'Tomato', 'Pumpkin'];\
-let numbers = [1, 3, 6, 4, 3, 2]
-let nums = [340, 91, 65, 5, 10]
+let numbers = [1, 3, 6, 4, 3, 2];\
+let nums = [340, 91, 65, 5, 10];
 
 ### Methods
 
@@ -137,9 +137,9 @@ For numbers with more than two digits, we need to use a compare function
 ```javascript
 nums.sort()
 // [10, 340, 5, 65, 91]
-nums.sort((a, b) {return a - b})
+nums.sort((a, b) => {return a - b})
 // [5, 10, 65, 91, 340]
-nums.sort((a, b) {return b - a})
+nums.sort((a, b) => {return b - a})
 // [340, 91, 65, 10, 5]
 ```
 
