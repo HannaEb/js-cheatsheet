@@ -119,7 +119,13 @@ numbers.lastIndexOf(3)
 
 #### map()
 
-#### of()
+Creates a new array with the results of calling a function for every array element
+
+```javascript
+numbers.map(n => n * 2)
+// [2, 6, 12, 8, 6, 4]
+```
+
 
 #### pop()
 
@@ -143,7 +149,25 @@ fruit.push('Peach')
 
 #### reduce()
 
+Creates a new array with a single value by executing the provided function, starting from the beginning
+
+```javascript
+numbers.reduce((sum, n) => sum + n)
+// 19
+numbers.reduce((sum, n) => sum - n)
+// -17
+```
+
+
 #### reduceRight()
+
+Creates a new array with a single value by executing the provided function, starting from the end
+
+```javascript
+numbers.reduceRight((sum, n) => sum - n)
+// -15
+```
+
 
 #### reverse()
 
@@ -203,6 +227,18 @@ nums.sort((a, b) => {return b - a})
 
 
 #### splice()
+
+Adds/removes items to/from an array and returns the removed items
+
+```javascript
+fruit.splice(1, 1, 'Kiwi')
+// returns ['Mango'], fruit is now ['Apple', 'Kiwi', 'Banana']
+fruit.splice(2, 0, 'Kiwi')
+// returns [], fruit is now ['Apple', 'Mango', 'Kiwi', 'Banana']
+fruit.splice(1, 2)
+// returns ['Mango', 'Banana'], fruit is now ['Apple']
+```
+
 
 #### toLocaleString()
 
