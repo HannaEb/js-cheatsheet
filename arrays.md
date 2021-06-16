@@ -16,6 +16,7 @@ fruit.concat(veg)
 // ['Apple', 'Mango', 'Banana', 'Carrot', 'Tomato', 'Pumpkin']
 ```
 
+
 #### copyWithin()
 
 #### entries()
@@ -24,7 +25,25 @@ fruit.concat(veg)
 
 #### fill()
 
+Fills the specified elements in an array with a static value
+
+```javascript
+fruit.fill('Kiwi')
+// ['Kiwi', 'Kiwi', 'Kiwi']
+fruit.fill('Kiwi', 1, 3)
+// ['Apple', 'Kiwi', 'Kiwi']
+```
+
+
 #### filter()
+
+Creates a new array filled with all array elements that pass a test provided as a function
+
+```javascript
+numbers.filter(n => n > 2)
+// [3, 6, 4, 3]
+```
+
 
 #### find()
 
@@ -40,6 +59,20 @@ fruit.concat(veg)
 
 #### includes()
 
+Determines whether an array contains a specified element and returns a boolean
+
+```javascript
+  fruit.includes('Apple')
+  // true
+  fruit.includes('Melon')
+  // false
+  fruit.includes('Apple', 1)
+  // false, search starts at index 1
+  fruit.includes('banana')
+  // false, the method is case sensitive
+```
+
+
 #### indexOf()
 
 Returns the first position at which a given element appears in an array
@@ -49,7 +82,16 @@ numbers.indexOf(3)
 // 1
 ```
 
+
 #### isArray()
+
+Determines whether an object is an array and returns a boolean
+
+```javascript
+Array.isArray(fruit)
+// true
+```
+
 
 #### join()
 
@@ -62,6 +104,7 @@ fruit.join(' ')
 // 'Apple Mango Banana'
 ```
 
+
 #### keys()
 
 #### lastIndexOf()
@@ -72,6 +115,7 @@ Returns the last position at which a given element appears in an array
 numbers.lastIndexOf(3)
 // 4
 ```
+
 
 #### map()
 
@@ -86,6 +130,7 @@ fruit.pop()
 // returns 'Banana', fruit is now ['Apple, 'Mango']
 ```
 
+
 #### push()
 
 Adds one or more items to the end of the array and returns the new length
@@ -94,6 +139,7 @@ Adds one or more items to the end of the array and returns the new length
 fruit.push('Peach')                     
 // ['Apple', 'Mango', 'Banana', 'Peach']
 ```
+
 
 #### reduce()
 
@@ -108,6 +154,7 @@ fruit.reverse()
 // ['Banana', 'Mango', 'Apple']
 ```
 
+
 #### shift()
 
 Removes the first element from the array and returns the element
@@ -117,7 +164,18 @@ fruit.shift()
 // returns 'Apple', fruit is now ['Mango', 'Banana']
 ```
 
+
 #### slice()
+
+Pulls a copy of a portion of an array into a new array. Does not change the original array
+
+```javascript
+numbers.slice(1, 3)
+// [3, 6]
+numbers.slice(-3, -1)
+// [4, 3]
+```
+
 
 #### some()
 
@@ -143,11 +201,20 @@ nums.sort((a, b) => {return b - a})
 // [340, 91, 65, 10, 5]
 ```
 
+
 #### splice()
 
 #### toLocaleString()
 
 #### toString()
+
+Returns a string with all the elements in the array, separated by commas
+
+```javascript
+fruit.toString()
+// 'Apple,Mango,Banana'
+```
+
 
 #### unshift()
 
@@ -158,6 +225,15 @@ fruit.unshift('Peach')
 // ['Peach', 'Apple', 'Mango', 'Banana']
 ```
 
+
 #### valueOf()
+
+Returns the array itself
+
+```javascript
+fruit.valueOf()
+// ['Apple', 'Mango', 'Banana']
+```
+
 
 #### values()
