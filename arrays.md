@@ -47,7 +47,23 @@ numbers.filter(n => n > 2)
 
 #### find()
 
+Returns the value of the first element in an array that passes a test provided as a function
+
+```javascript
+numbers.find(n => n > 2)
+// 3
+```
+
+
 #### findIndex()
+
+Returns the index of the first element in an array that passes a test provided as a function
+
+```javascript
+numbers.findIndex(n => n === 6)
+// 2
+```
+
 
 #### flat()
 
@@ -239,8 +255,6 @@ fruit.splice(1, 2)
 // returns ['Mango', 'Banana'], fruit is now ['Apple']
 ```
 
-
-#### toLocaleString()
 
 #### toString()
 
