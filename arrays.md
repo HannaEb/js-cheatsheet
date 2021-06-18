@@ -3,7 +3,8 @@
 let fruit = ['Apple', 'Mango', 'Banana'];\
 let veg = ['Carrot', 'Tomato', 'Pumpkin'];\
 let numbers = [1, 3, 6, 4, 3, 2];\
-let nums = [340, 91, 65, 5, 10];
+let nums = [340, 91, 65, 5, 10];\
+let subs = [['Cat', 'Dog'], 'Bird', [[['Mouse']]]];
 
 ### Methods
 
@@ -19,9 +20,32 @@ fruit.concat(veg)
 
 #### copyWithin()
 
+Copies part of an array to another location in the same array and returns it without modifying its length
+
+```javascript 
+numbers.copyWithin(0, 4)
+// [3, 2, 6, 4, 3, 2]
+numbers.copyWithin()
+// [4, 3, 6, 4, 3, 2]
+numbers.copyWithin(1, 2, 5)
+// [1, 6, 4, 3, 3, 2]
+```
+
+
 #### entries()
 
+
 #### every()
+
+Tests whether all elements in the array pass a test provided by a function, retruns a boolean
+
+```javascript 
+fruit.every(f => typeof f === 'string')
+// true
+numbers.every(n => n > 5)
+// false
+```
+
 
 #### fill()
 
@@ -66,6 +90,18 @@ numbers.findIndex(n => n === 6)
 
 
 #### flat()
+
+Creates a new array with all sub-arrays concatenated into it up to the specified depth
+
+```javascript 
+subs.flat()
+// ['Cat', 'Dog', 'Bird', [['Mouse']]]
+subs.flat(2)
+// ['Cat', 'Dog', 'Bird', ['Mouse']]
+subs.flat(Infinity)
+// ['Cat', 'Dog', 'Bird', 'Mouse']
+```
+
 
 #### flatMap()
 
