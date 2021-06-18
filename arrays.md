@@ -34,6 +34,18 @@ numbers.copyWithin(1, 2, 5)
 
 #### entries()
 
+Returns an Array Iterator objext that contains the key/value pairs for each index in the array 
+
+```javascript 
+const keyvalues = fruit.entries()
+for (const kv of keyvalues) {
+  console.log(kv)
+}
+// [0, 'Apple']
+// [1, 'Mango']
+// [2, 'Banana']
+```
+
 
 #### every()
 
@@ -104,6 +116,18 @@ subs.flat(Infinity)
 
 
 #### flatMap()
+
+Returns a new array formed by applying the given function to each element of the array, and then flattening the result by one level
+
+```javascript 
+numbers.flatMap(n => [n * 2])
+// [2, 6, 12, 8, 6, 4]
+numbers.flatMap(n => [[n * 2]]
+// [[2], [6], [12], [8], [6], [4]])
+fruit.flatMap((f, index) => [f, index])
+//['Apple', 0, 'Mango', 1, 'Banana', 2]
+```
+
 
 #### forEach()
 
@@ -178,6 +202,19 @@ fruit.join(' ')
 
 
 #### keys()
+
+Returns an Array Iterator object with the keys of the array
+
+```javascript 
+const fruitkeys = fruit.keys()
+for (const key of fruitkeys) {
+  console.log(key)
+}
+// 0
+// 1
+// 3
+```
+
 
 #### lastIndexOf()
 
@@ -351,3 +388,15 @@ fruit.valueOf()
 
 
 #### values()
+
+Returns an Array Iterator object that contains the values for each index in the array 
+
+```javascript 
+const fruitvalues = fruit.values()
+for (const value of fruitvalues) {
+  console.log(value)
+}
+// 'Apple'
+// 'Mango'
+// 'Banana'
+```
