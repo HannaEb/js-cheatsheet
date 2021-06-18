@@ -107,7 +107,27 @@ subs.flat(Infinity)
 
 #### forEach()
 
+Executes the provided function once for each element in the array, returns undefined 
+
+```javascript 
+fruit.forEach(f => console.log(f + 'pie'))
+// 'Applepie'
+// 'Mangopie'
+// 'Bananapie'
+```
+
+
 #### from()
+
+Creates a new array instance from an array-like or iterable object 
+
+```javascript 
+Array.from('cat')
+// ['c', 'a', 't']
+Array from([1, 2, 3], n => n + 2)
+// [3, 4, 5]
+```
+
 
 #### includes()
 
@@ -254,6 +274,14 @@ numbers.slice(-3, -1)
 
 
 #### some()
+
+Tests whether at least one lement in the array passes the test provided by the function, returns a boolean
+
+```javascript 
+numbers.some(n => n > 5)
+// true
+```
+
 
 #### sort()
 
