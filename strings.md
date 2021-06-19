@@ -51,14 +51,52 @@ food.concat(container)
 
 #### endsWith()
 
+Determines whether the string ends with the specified characters and returns a boolean. The length of the string to be checked can be specified as a second argument
+
+```javascript 
+greeting.endsWith('world!')
+// true
+greeting.endsWith('world!', 10)
+// false
+greeting.endsWith('world!', 12)
+// true
+greeting.endsWith('World!')
+// false
+```
+
 
 #### fromCharCode()
+
+Converts Unicode numbers into characters
+
+```javascript 
+String.fromCharCode(72, 101, 108, 108, 111)
+// Hello
+```
 
 
 #### fromCodePoint()
 
+Returns a string created by using the specified sequence of code points 
+
+```javascript 
+String.fromCodePoint(72, 101, 108, 108, 111)
+// Hello
+```
+
 
 #### includes()
+
+Determines wheter the string contains the specified characters and returns a boolean
+
+```javascript 
+greeting.includes(' ')
+// true
+greeting.includes('llo')
+// true
+greeting.inlcudes('hello')
+// false
+```
 
 
 #### indexOf()
