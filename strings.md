@@ -3,7 +3,8 @@
 let greeting = 'Hello world!';\
 let food = 'fruit';\
 let container = 'basket';\
-let phrase = 'Luni and Marley are cute and naughty';
+let phrase = 'Luni and Marley are cute and naughty';\
+let string = '     Good morning!      ';
 
 ### Methods 
 
@@ -247,20 +248,68 @@ phrase.split(' ')
 
 #### startsWith()
 
+Determines whether the string starts with the specified characters and returns a boolean
+
+```javascript 
+phrase.startsWith('Luni')
+// true 
+phrase.startsWith('Marley')
+// false 
+phrase.startsWith('Marley', 9)
+// true
+```
+
 
 #### substring()
+
+Extracts the characters between the two specified indices and returns the new string 
+
+```javascript 
+phrase.substring(0, 15)
+// Luni and Marley
+phrase.substring(20)
+// cute and naughty
+```
 
 
 #### toLowerCase()
 
+Converts the string to lowercase letters
+
+```javascript 
+phrase.toLowerCase()
+// luni and marley are cute and naughty
+```
+
 
 #### toString()
+
+Returns a string representing the specified object 
+
+```javascript 
+const array = ['Luni', 'Marley']
+// Luni,Marley
+```
 
 
 #### toUpperCase()
 
+Converts the string to uppercase letters 
+
+```javascript
+phrase.toUpperCase()
+// LUNI AND MARLEY ARE CUTE AND NAUGHTY
+```
+
 
 #### trim()
+
+Removes whitespace from both ends of a string 
+
+```javascript 
+string.trim()
+// Good morning!
+```
 
 
 #### trimEnd()
