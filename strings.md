@@ -3,6 +3,7 @@
 let greeting = 'Hello world!';\
 let food = 'fruit';\
 let container = 'basket';\
+let phrase = 'Luni and Marley are cute and naughty';
 
 ### Methods 
 
@@ -101,44 +102,147 @@ greeting.inlcudes('hello')
 
 #### indexOf()
 
+Returns the position of the first occurrence of the specified value in the string, starting the search at a certain index. Returns -1 if the value is not found
+
+```javascript 
+phrase.indexOf('and')
+// 5
+phrase.indexOf('and', 10)
+// 25
+```
+
 
 #### lastIndexOf()
+
+Returns the position of the last occurrence of the specified value in the string, searching backwards. Returns -1 if the value is not found
+
+```javascript 
+phrase.lastIndexOf('and')
+// 25
+phrase.lastIndexOf('and', 10)
+// 5
+```
 
 
 #### match()
 
+Searches the string for a match against a regular expression and returns the matches as an Array object
+
+```javascript 
+phrase.match(/and/g)
+// ['and', 'and']
+phrase.match(/xyz/g)
+// null
+```
+
 
 #### matchAll()
+
+Returns an iterator of all results matching the regular expression
+
+```javascript 
+phrase.matchAll(/and/g)
+// Object [RegExp String Iterator] {}
+```
 
 
 #### normalize()
 
+Returns the Unicode Normalization Form of the string 
+
+```javascript 
+const hello = '\u0048\u0065\u006c\u006c\u006f'
+console.log(hello)
+// Hello
+```
+
 
 #### padEnd()
+
+Pads the end of the current string with the specified characters so the resulting string reaches the specified length
+
+```javascript 
+food.padEnd(10, '.')
+// fruit.....
+```
 
 
 #### padStart()
 
+Pads the beginning of the current string with the specified characters so the resulting string reaches the specified length
 
-#### raw()
+```javascript 
+food.padStart(10, '.')
+// .....fruit
+```
 
 
 #### repeat()
 
+Returns a new string with the original string copied the specified number of times
+
+```javascript 
+food.repeat(3)
+// fruitfruitfruit
+```
+
 
 #### replace()
+
+Returns a new string where the first occurrence of the specified value is replaced
+
+```javascript 
+phrase.replace('and', '&')
+// Luni & Marley are cute and naughty
+```
 
 
 #### replaceAll()
 
+Returns a new string where all occurrences of the specified value are replaced 
+
+```javascript 
+phrase.replaceAll('and', '&')
+//Luni & Marley are cute & naughty
+```
+
 
 #### search() 
+
+Searches the string for the specified value and returns the index of the match. Returns -1 if no match is found
+
+```javascript 
+phrase.search('and')
+// 5
+phrase.search(/and/g)
+// 5
+```
 
 
 #### slice()
 
+Extracts part of the string and returns it as a new string 
+
+```javascript 
+phrase.slice(9, 15)
+// Marley
+phrase.slice(-36, -32)
+// Luni
+phrase.slice(25)
+// and naughty
+```
+
 
 #### split()
+
+Splits the string into an array of substrings and returns the array
+
+```javascript 
+phrase.split()
+// ['Luni and Marley are cute and naughty]
+phrase.split(' ')
+// ['Luni', 'and', 'Marley', 'are', 'cute', 'and', 'naughty']
+```
 
 
 #### startsWith()
