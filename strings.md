@@ -304,7 +304,7 @@ phrase.toUpperCase()
 
 #### trim()
 
-Removes whitespace from both ends of a string 
+Removes whitespace from both ends of the string 
 
 ```javascript 
 string.trim()
@@ -314,8 +314,28 @@ string.trim()
 
 #### trimEnd()
 
+Removes whitespace from the end of the string 
+
+```javascript 
+string.trimEnd()
+// '      Good morning!'       
+```
 
 #### trimStart()
 
+Removes whitespace from the beginning of the string
+
+```javascript 
+string.trimStart()
+// 'Good morning!      '
+```
+
 
 #### valueOf()
+
+Returns the primitive value of a string object 
+
+```javascript
+phrase.valueOf()
+// Luni and Marley are cute and naughty
+```
