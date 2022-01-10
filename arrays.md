@@ -22,7 +22,7 @@ fruit.concat(veg)
 
 Copies part of an array to another location in the same array and returns it without modifying its length
 
-```javascript 
+```javascript
 numbers.copyWithin(0, 4)
 // [3, 2, 6, 4, 3, 2]
 numbers.copyWithin()
@@ -34,9 +34,9 @@ numbers.copyWithin(1, 2, 5)
 
 #### entries()
 
-Returns an Array Iterator objext that contains the key/value pairs for each index in the array 
+Returns an Array Iterator object that contains the key/value pairs for each index in the array
 
-```javascript 
+```javascript
 const keyvalues = fruit.entries()
 for (const kv of keyvalues) {
   console.log(kv)
@@ -49,9 +49,9 @@ for (const kv of keyvalues) {
 
 #### every()
 
-Tests whether all elements in the array pass a test provided by a function, retruns a boolean
+Tests whether all elements in the array pass a test provided by a function, returns a boolean
 
-```javascript 
+```javascript
 fruit.every(f => typeof f === 'string')
 // true
 numbers.every(n => n > 5)
@@ -105,7 +105,7 @@ numbers.findIndex(n => n === 6)
 
 Creates a new array with all sub-arrays concatenated into it up to the specified depth
 
-```javascript 
+```javascript
 subs.flat()
 // ['Cat', 'Dog', 'Bird', [['Mouse']]]
 subs.flat(2)
@@ -119,10 +119,10 @@ subs.flat(Infinity)
 
 Returns a new array formed by applying the given function to each element of the array, and then flattening the result by one level
 
-```javascript 
+```javascript
 numbers.flatMap(n => [n * 2])
 // [2, 6, 12, 8, 6, 4]
-numbers.flatMap(n => [[n * 2]]
+numbers.flatMap(n => [[n * 2]])
 // [[2], [6], [12], [8], [6], [4]])
 fruit.flatMap((f, index) => [f, index])
 //['Apple', 0, 'Mango', 1, 'Banana', 2]
@@ -131,9 +131,9 @@ fruit.flatMap((f, index) => [f, index])
 
 #### forEach()
 
-Executes the provided function once for each element in the array, returns undefined 
+Executes the provided function once for each element in the array, returns undefined
 
-```javascript 
+```javascript
 fruit.forEach(f => console.log(f + 'pie'))
 // 'Applepie'
 // 'Mangopie'
@@ -143,9 +143,9 @@ fruit.forEach(f => console.log(f + 'pie'))
 
 #### from()
 
-Creates a new array instance from an array-like or iterable object 
+Creates a new array instance from an array-like or iterable object
 
-```javascript 
+```javascript
 Array.from('cat')
 // ['c', 'a', 't']
 Array from([1, 2, 3], n => n + 2)
@@ -205,7 +205,7 @@ fruit.join(' ')
 
 Returns an Array Iterator object with the keys of the array
 
-```javascript 
+```javascript
 const fruitkeys = fruit.keys()
 for (const key of fruitkeys) {
   console.log(key)
@@ -312,9 +312,9 @@ numbers.slice(-3, -1)
 
 #### some()
 
-Tests whether at least one lement in the array passes the test provided by the function, returns a boolean
+Tests whether at least one element in the array passes the test provided by the function, returns a boolean
 
-```javascript 
+```javascript
 numbers.some(n => n > 5)
 // true
 ```
@@ -389,9 +389,9 @@ fruit.valueOf()
 
 #### values()
 
-Returns an Array Iterator object that contains the values for each index in the array 
+Returns an Array Iterator object that contains the values for each index in the array
 
-```javascript 
+```javascript
 const fruitvalues = fruit.values()
 for (const value of fruitvalues) {
   console.log(value)

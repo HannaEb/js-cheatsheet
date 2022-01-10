@@ -6,13 +6,13 @@ let container = 'basket';\
 let phrase = 'Luni and Marley are cute and naughty';\
 let string = '     Good morning!      ';
 
-### Methods 
+### Methods
 
 #### charAt()
 
-Returns the character at the specified index in a string 
+Returns the character at the specified index in a string
 
-```javascript 
+```javascript
 greeting.charAt(1)
 // e
 ```
@@ -22,7 +22,7 @@ greeting.charAt(1)
 
 Returns the Unicode of the character at the specified index or at index 0 if no index is specified
 
-```javascript 
+```javascript
 greeting.charCodeAt(3)
 // 108
 greeting.charCodeAt()
@@ -32,18 +32,18 @@ greeting.charCodeAt()
 
 #### codePointAt()
 
-Returns the UTF-16 code of the character at the specified index or at index 0 if no index is specified 
+Returns the UTF-16 code of the character at the specified index or at index 0 if no index is specified
 
-```javascript 
-greeting.charCodeAt(3)
+```javascript
+greeting.codePointAt(3)
 // 108
 ```
 
 #### concat()
 
-Joins two or more strings and returns the new string 
+Joins two or more strings and returns the new string
 
-```javascript 
+```javascript
 food.concat(' ', container)
 // fruit basket
 food.concat(container)
@@ -55,7 +55,7 @@ food.concat(container)
 
 Determines whether the string ends with the specified characters and returns a boolean. The length of the string to be checked can be specified as a second argument
 
-```javascript 
+```javascript
 greeting.endsWith('world!')
 // true
 greeting.endsWith('world!', 10)
@@ -71,7 +71,7 @@ greeting.endsWith('World!')
 
 Converts Unicode numbers into characters
 
-```javascript 
+```javascript
 String.fromCharCode(72, 101, 108, 108, 111)
 // Hello
 ```
@@ -79,9 +79,9 @@ String.fromCharCode(72, 101, 108, 108, 111)
 
 #### fromCodePoint()
 
-Returns a string created by using the specified sequence of code points 
+Returns a string created by using the specified sequence of code points
 
-```javascript 
+```javascript
 String.fromCodePoint(72, 101, 108, 108, 111)
 // Hello
 ```
@@ -89,9 +89,9 @@ String.fromCodePoint(72, 101, 108, 108, 111)
 
 #### includes()
 
-Determines wheter the string contains the specified characters and returns a boolean
+Determines whether the string contains the specified characters and returns a boolean
 
-```javascript 
+```javascript
 greeting.includes(' ')
 // true
 greeting.includes('llo')
@@ -105,7 +105,7 @@ greeting.inlcudes('hello')
 
 Returns the position of the first occurrence of the specified value in the string, starting the search at a certain index. Returns -1 if the value is not found
 
-```javascript 
+```javascript
 phrase.indexOf('and')
 // 5
 phrase.indexOf('and', 10)
@@ -117,7 +117,7 @@ phrase.indexOf('and', 10)
 
 Returns the position of the last occurrence of the specified value in the string, searching backwards. Returns -1 if the value is not found
 
-```javascript 
+```javascript
 phrase.lastIndexOf('and')
 // 25
 phrase.lastIndexOf('and', 10)
@@ -129,7 +129,7 @@ phrase.lastIndexOf('and', 10)
 
 Searches the string for a match against a regular expression and returns the matches as an Array object
 
-```javascript 
+```javascript
 phrase.match(/and/g)
 // ['and', 'and']
 phrase.match(/xyz/g)
@@ -141,7 +141,7 @@ phrase.match(/xyz/g)
 
 Returns an iterator of all results matching the regular expression
 
-```javascript 
+```javascript
 phrase.matchAll(/and/g)
 // Object [RegExp String Iterator] {}
 ```
@@ -149,9 +149,9 @@ phrase.matchAll(/and/g)
 
 #### normalize()
 
-Returns the Unicode Normalization Form of the string 
+Returns the Unicode Normalization Form of the string
 
-```javascript 
+```javascript
 const hello = '\u0048\u0065\u006c\u006c\u006f'
 console.log(hello)
 // Hello
@@ -162,7 +162,7 @@ console.log(hello)
 
 Pads the end of the current string with the specified characters so the resulting string reaches the specified length
 
-```javascript 
+```javascript
 food.padEnd(10, '.')
 // fruit.....
 ```
@@ -172,7 +172,7 @@ food.padEnd(10, '.')
 
 Pads the beginning of the current string with the specified characters so the resulting string reaches the specified length
 
-```javascript 
+```javascript
 food.padStart(10, '.')
 // .....fruit
 ```
@@ -182,7 +182,7 @@ food.padStart(10, '.')
 
 Returns a new string with the original string copied the specified number of times
 
-```javascript 
+```javascript
 food.repeat(3)
 // fruitfruitfruit
 ```
@@ -192,7 +192,7 @@ food.repeat(3)
 
 Returns a new string where the first occurrence of the specified value is replaced
 
-```javascript 
+```javascript
 phrase.replace('and', '&')
 // Luni & Marley are cute and naughty
 ```
@@ -200,19 +200,19 @@ phrase.replace('and', '&')
 
 #### replaceAll()
 
-Returns a new string where all occurrences of the specified value are replaced 
+Returns a new string where all occurrences of the specified value are replaced
 
-```javascript 
+```javascript
 phrase.replaceAll('and', '&')
 //Luni & Marley are cute & naughty
 ```
 
 
-#### search() 
+#### search()
 
 Searches the string for the specified value and returns the index of the match. Returns -1 if no match is found
 
-```javascript 
+```javascript
 phrase.search('and')
 // 5
 phrase.search(/and/g)
@@ -222,9 +222,9 @@ phrase.search(/and/g)
 
 #### slice()
 
-Extracts part of the string and returns it as a new string 
+Extracts part of the string and returns it as a new string
 
-```javascript 
+```javascript
 phrase.slice(9, 15)
 // Marley
 phrase.slice(-36, -32)
@@ -238,7 +238,7 @@ phrase.slice(25)
 
 Splits the string into an array of substrings and returns the array
 
-```javascript 
+```javascript
 phrase.split()
 // ['Luni and Marley are cute and naughty]
 phrase.split(' ')
@@ -250,11 +250,11 @@ phrase.split(' ')
 
 Determines whether the string starts with the specified characters and returns a boolean
 
-```javascript 
+```javascript
 phrase.startsWith('Luni')
-// true 
+// true
 phrase.startsWith('Marley')
-// false 
+// false
 phrase.startsWith('Marley', 9)
 // true
 ```
@@ -262,9 +262,9 @@ phrase.startsWith('Marley', 9)
 
 #### substring()
 
-Extracts the characters between the two specified indices and returns the new string 
+Extracts the characters between the two specified indices and returns the new string
 
-```javascript 
+```javascript
 phrase.substring(0, 15)
 // Luni and Marley
 phrase.substring(20)
@@ -276,7 +276,7 @@ phrase.substring(20)
 
 Converts the string to lowercase letters
 
-```javascript 
+```javascript
 phrase.toLowerCase()
 // luni and marley are cute and naughty
 ```
@@ -284,9 +284,9 @@ phrase.toLowerCase()
 
 #### toString()
 
-Returns a string representing the specified object 
+Returns a string representing the specified object
 
-```javascript 
+```javascript
 const array = ['Luni', 'Marley']
 // Luni,Marley
 ```
@@ -294,7 +294,7 @@ const array = ['Luni', 'Marley']
 
 #### toUpperCase()
 
-Converts the string to uppercase letters 
+Converts the string to uppercase letters
 
 ```javascript
 phrase.toUpperCase()
@@ -304,9 +304,9 @@ phrase.toUpperCase()
 
 #### trim()
 
-Removes whitespace from both ends of the string 
+Removes whitespace from both ends of the string
 
-```javascript 
+```javascript
 string.trim()
 // Good morning!
 ```
@@ -314,9 +314,9 @@ string.trim()
 
 #### trimEnd()
 
-Removes whitespace from the end of the string 
+Removes whitespace from the end of the string
 
-```javascript 
+```javascript
 string.trimEnd()
 // '      Good morning!'       
 ```
@@ -325,7 +325,7 @@ string.trimEnd()
 
 Removes whitespace from the beginning of the string
 
-```javascript 
+```javascript
 string.trimStart()
 // 'Good morning!      '
 ```
@@ -333,7 +333,7 @@ string.trimStart()
 
 #### valueOf()
 
-Returns the primitive value of a string object 
+Returns the primitive value of a string object
 
 ```javascript
 phrase.valueOf()
